@@ -1,22 +1,20 @@
-// #You will be given a positive integer N, you need to print from 1 to N and besides the value, print Yes or No Print Yes if the value is divisible by 5 and print No otherwise.include<stdio.h>
+// Given a number X. Print "EVEN" if the first digit of X is even number. Otherwise print "ODD".
+#include <stdio.h>
+
 int main()
 {
-    int N;
-    scanf("%d", &N);
-    int i = 0;
-    {
-        for (i = 1; i <= N; i++)
-        {
-            if (i % 5 == 0)
-            {
-                printf("%d Yes\n", i);
-            }
-            else
-            {
-                printf("%d No\n", i);
-            }
-        }
-    }
+    int X ;
+    scanf("%d", &X);
+    int first_digit = X/1000;
+    // printf("%d", first_digit);
 
+    if (first_digit % 2 == 0)
+    {
+        printf("EVEN");
+    }
+    else
+    {
+        printf("ODD");
+    }
     return 0;
 }
