@@ -1,1 +1,1 @@
-Value of x after pre-increment: 12
+1
