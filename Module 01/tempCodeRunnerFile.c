@@ -1,5 +1,10 @@
-  int x;
-      scanf("%d", &x);
-    int v;
-      scanf("%d", &v);
-    
+#include<stdio.h>
+#include<string.h>
+int main ()
+{
+    char s[100];
+    printf("Enter a string: ");
+    scanf("%s", s);
+    printf("Length of the string is: %d\n", strlen(s));
+    return 0;
+}
